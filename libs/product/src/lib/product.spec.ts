@@ -2,6 +2,6 @@ import { product } from './product';
 
 describe('product', () => {
   it('should work', () => {
-    expect(product()).toEqual('product');
+    expect(product()).toEqual('product-v2');
   });
 });

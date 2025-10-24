@@ -1,3 +1,3 @@
 export function product(): string {
-  return 'product';
+  return 'product-v2';
 }
