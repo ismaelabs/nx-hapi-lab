@@ -42,6 +42,7 @@
   "workspaces": [
     "apps/*",
     "libs/shared",
-    "libs/product"
+    "libs/product",
+    "alguma/test"
   ]
 }
