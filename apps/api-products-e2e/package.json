@@ -1,0 +1,26 @@
+{
+  "name": "@nx-hapi-lab/api-products-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@nx-hapi-lab/api-products"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/api-products-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@nx-hapi-lab/api-products:build",
+          "@nx-hapi-lab/api-products:serve"
+        ]
+      }
+    }
+  }
+}
