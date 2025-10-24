@@ -41,6 +41,7 @@
   },
   "workspaces": [
     "apps/*",
-    "libs/shared"
+    "libs/shared",
+    "libs/product"
   ]
 }
